@@ -39,7 +39,7 @@
                 <img src="img/works-sample.jpg" alt="">
             </div>
             <h4 class="content-title">URL</h4>
-            <p>https://--------------------------</p>
+            <p><a href="#">https://--------------------------</a></p>
         </section>
 
         <footer>

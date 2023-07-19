@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
- /* 共通部分 */
+/* 共通部分 */
 
 html {
     font-size: 100%;
@@ -43,13 +43,23 @@ li {
 
 .site-title a {
     display: block;
+    color: #8e775d;
 }
 
 .section-title {
     font-family: 'Itim', cursive;
     font-weight: normal;
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+#work-sample .section-title {
+    font-size: 2rem;
+    text-align: left;
+}
+
+#inner-section .section-title {
+    text-align: left;
 }
 
 .content-title {
@@ -60,13 +70,32 @@ li {
     margin-bottom: 10px;
 }
 
- /* ヘッダー */
+#work-sample .content-title {
+    padding: 0 0 0 15px;
+    border-left: 5px solid #8e775d;
+}
 
- .page-header {
+#work-sample p {
+    text-align: left;
+}
+
+#work-sample .work-img {
+    margin-bottom: 20px;
+}
+
+#work-sample {
+    margin-bottom: 100px;
+}
+
+
+/* ヘッダー */
+
+.page-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 
 .main-nav {
     display: flex;
@@ -87,26 +116,35 @@ li {
 }
 
 
- /* メインビジュアル  */
+/* メインビジュアル  */
 
 .main-visual {
-    text-align: center;
     background-image: linear-gradient(#e4c6a6, #e6cd8c);
     background-size: cover;
     width: 100%;
-    max-width: 1920px;
     height: 600px;
     margin-bottom: 100px;
 }
 
-.page-title {
-    font-size: 4rem;
-    font-family: 'Itim', cursive;
-    font-weight: normal;
-    padding-top: 200px;
+#inner {
+    height: 160px;
 }
 
- /* ABOUT  */
+.page-title {
+    font-size: 3.5rem;
+    font-family: 'Itim', cursive;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1;
+    padding: 272px 0;
+}
+
+#inner .page-title {
+    padding: 52px 0;
+    line-height: 1;
+}
+
+/* ABOUT  */
 
 #about {
     margin-bottom: 100px;
@@ -128,10 +166,10 @@ li {
     margin-left: 30px;
 }
 
- /* WORKS  */
+/* WORKS  */
 
 #works {
-    margin-bottom :100px;
+    margin-bottom: 100px;
 }
 
 #works ul {
@@ -149,12 +187,12 @@ li {
     text-align: left;
 }
 
- /* CONTACT  */
+/* CONTACT  */
 
 #contact {
     margin-bottom: 100px;
 }
- 
+
 #contact dl {
     display: flex;
     flex-wrap: wrap;
@@ -206,7 +244,7 @@ footer {
     color: #fff;
 }
 
- /* スマホ  */
+/* スマホ  */
 
 @media screen and (max-width: 600px) {
     .page-header {
@@ -215,6 +253,23 @@ footer {
 
     .main-nav li:first-child {
         margin-left: 0;
+    }
+
+    .main-visual {
+        margin-bottom: 50px;
+    }
+
+    #inner {
+        height: 80px;
+    }
+
+    #home .page-title {
+        padding: 216px 0;
+    }
+
+    #inner .page-title {
+        font-size: 2.5rem;
+        padding: 20px 0;
     }
 
     #about .content {
@@ -242,5 +297,14 @@ footer {
     #contact dt,
     #contact dd {
         width: 100%;
+    }
+
+    #work-sample .section-title {
+        font-size: 1.5rem;
+    }
+
+    #work-sample .content-title {
+        font-size: 1.25rem;
+        padding: 0 0 0 10px;
     }
 }

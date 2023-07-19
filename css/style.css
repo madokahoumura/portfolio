@@ -13,6 +13,11 @@ body {
 
 a {
     text-decoration: none;
+    color: #8e775d;
+}
+
+a:hover {
+    opacity: 0.7;
 }
 
 p {
@@ -43,7 +48,6 @@ li {
 
 .site-title a {
     display: block;
-    color: #8e775d;
 }
 
 .section-title {
@@ -87,7 +91,6 @@ li {
     margin-bottom: 100px;
 }
 
-
 /* ヘッダー */
 
 .page-header {
@@ -106,15 +109,6 @@ li {
 .main-nav li {
     margin-left: 36px;
 }
-
-.main-nav a {
-    color: #8e775d;
-}
-
-.main-nav a:hover {
-    opacity: 0.7;
-}
-
 
 /* メインビジュアル  */
 
@@ -187,6 +181,18 @@ li {
     text-align: left;
 }
 
+#works .content-title a {
+    color: #8e775d;
+}
+
+#works .content-title a:hover {
+    opacity: 0.7;
+}
+
+ /* WORKS-SAMPLE  */
+
+
+
 /* CONTACT  */
 
 #contact {
@@ -247,6 +253,8 @@ footer {
 /* スマホ  */
 
 @media screen and (max-width: 600px) {
+    /* ヘッダー */
+
     .page-header {
         flex-direction: column;
     }
@@ -255,22 +263,26 @@ footer {
         margin-left: 0;
     }
 
+    /* メインビジュアル  */
+
     .main-visual {
         margin-bottom: 50px;
-    }
-
-    #inner {
-        height: 80px;
     }
 
     #home .page-title {
         padding: 216px 0;
     }
 
+    #inner {
+        height: 80px;
+    }
+
     #inner .page-title {
         font-size: 2.5rem;
         padding: 20px 0;
     }
+
+    /* ABOUT  */
 
     #about .content {
         flex-direction: column;
@@ -282,6 +294,8 @@ footer {
         text-align: justify;
     }
 
+    /* WORKS  */
+
     #works ul {
         flex-direction: column;
     }
@@ -289,6 +303,8 @@ footer {
     #works li {
         width: 100%;
     }
+
+    /* CONTACT  */
 
     #contact dl {
         flex-direction: column;
@@ -298,6 +314,8 @@ footer {
     #contact dd {
         width: 100%;
     }
+
+     /* WORKS-SAMPLE  */
 
     #work-sample .section-title {
         font-size: 1.5rem;
